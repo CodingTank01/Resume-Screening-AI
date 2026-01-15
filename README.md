@@ -1,73 +1,119 @@
-# Welcome to your Lovable project
+# AI-Powered Resume Screening & Candidate Ranking System 🚀
 
-## Project info
+An AI-driven web application that helps recruiters automatically screen resumes and rank candidates based on how well their skills match a given job description.  
+The system reduces manual effort, saves time, and supports fair, data-driven hiring decisions.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 📌 Problem Statement
 
-There are several ways of editing your application.
+Recruiters often receive a large number of resumes for a single job opening.  
+Manually reviewing each resume is:
+- Time-consuming
+- Prone to human bias
+- Inefficient for bulk hiring
 
-**Use Lovable**
+This project solves the problem by using AI to analyze resumes, extract skills, and rank candidates based on job relevance.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 💡 Solution Overview
 
-**Use your preferred IDE**
+The system allows recruiters to:
+1. Enter job details (title, description, experience, location)
+2. Upload multiple resumes (PDF / DOCX)
+3. Automatically extract skills from resumes
+4. Match candidate skills with job requirements
+5. Rank candidates based on a match score
+6. View results and make final decisions
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+AI is used only as a **decision-support tool** — final hiring decisions remain with humans.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## ✨ Key Features
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- AI-based resume screening
+- Skill extraction from job descriptions and resumes
+- Job-skill matching and relevance scoring
+- Candidate ranking based on match percentage
+- Support for multiple resume uploads
+- Clean and user-friendly interface
+- Human-in-the-loop decision making
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🧠 Google Technologies Used
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- **Google Gemini API**  
+  Used for AI-based skill extraction and semantic analysis of job descriptions and resumes.
 
-**Edit a file directly in GitHub**
+- **Google AI Studio**  
+  Used to create and manage the Gemini API key and test AI prompts.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Google Cloud–Ready Architecture**  
+  Backend designed to be deployed on Google Cloud services.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🏗️ System Architecture
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
+**Frontend (Client Side):**
+- React.js
 - TypeScript
-- React
-- shadcn-ui
 - Tailwind CSS
+- Zustand (state management)
 
-## How can I deploy this project?
+**Backend (Server Side):**
+- Node.js
+- Express.js
+- REST APIs
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+**AI Layer:**
+- Google Gemini API (Generative Language API)
 
-## Can I connect a custom domain to my Lovable project?
+**Data Flow:**
+Frontend → Backend → Gemini API → Backend → Frontend
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🔄 Process Flow
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+1. Recruiter enters job details  
+2. Job description is stored  
+3. Recruiter uploads candidate resumes  
+4. Resume text is extracted  
+5. AI extracts skills from job and resumes  
+6. Skills are matched and scored  
+7. Candidates are ranked  
+8. Results are displayed for decision-making  
+
+---
+
+## 🖥️ Tech Stack
+
+| Layer        | Technology |
+|--------------|------------|
+| Frontend     | React, TypeScript, Tailwind CSS |
+| Backend      | Node.js, Express |
+| AI           | Google Gemini API |
+| State Mgmt   | Zustand |
+| API Format   | REST (JSON) |
+
+---
+
+## 🚀 Getting Started (Local Setup)
+
+### Prerequisites
+- Node.js (v18 or later)
+- npm or bun
+- Git
+- Google Gemini API key
+
+---
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/skill-match-ai.git
+cd skill-match-ai
