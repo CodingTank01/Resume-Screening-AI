@@ -136,7 +136,7 @@ cd backend
 npm install
 
 ```
-# Create a .env file inside backend/:
+#### Create a .env file inside backend/:
 
 ```bash
 GEMINI_API_KEY=your_api_key_here
@@ -151,7 +151,7 @@ PORT=5000
 node server.js
 ```
 
-# Backend runs at
+#### Backend runs at
 
 ```bash
 http://localhost:5000
@@ -165,7 +165,7 @@ http://localhost:5000
 npm run dev
 ```
 
-# Frontend runs at:
+#### Frontend runs at:
 
 ```bash
 Frontend runs at:
