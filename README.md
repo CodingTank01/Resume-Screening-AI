@@ -1,7 +1,7 @@
 # AI-Powered Resume Screening & Candidate Ranking System 🚀
 
-An AI-driven web application that helps recruiters automatically screen resumes and rank candidates based on how well their skills match a given job description.  
-The system reduces manual effort, saves time, and supports fair, data-driven hiring decisions.
+An AI-driven web application designed to help recruiters automatically screen resumes and rank candidates based on how closely their skills and experience match a given job description.
+The system minimizes repetitive manual work, improves screening efficiency, and supports fair, data-driven hiring decisions while keeping humans in control.
 
 ---
 
