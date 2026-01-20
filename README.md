@@ -117,3 +117,66 @@ Frontend → Backend → Gemini API → Backend → Frontend
 ```bash
 git clone https://github.com/your-username/skill-match-ai.git
 cd skill-match-ai
+```
+
+---
+
+### 2️⃣ Install Frontend Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3️⃣ Setup Backend
+
+```bash
+cd backend
+npm install
+
+```
+#### Create a .env file inside backend/:
+
+```bash
+GEMINI_API_KEY=your_api_key_here
+PORT=5000
+```
+
+---
+
+### 4️⃣ Start Backend Server
+
+```bash
+node server.js
+```
+
+#### Backend runs at
+
+```bash
+http://localhost:5000
+```
+
+---
+
+### 4️⃣ Start Backend Server
+
+```bash
+npm run dev
+```
+
+#### Frontend runs at:
+
+```bash
+Frontend runs at:
+```
+
+---
+
+## 📄 License
+
+This project is developed for educational and hackathon purposes.
+
+
+
+
